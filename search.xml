@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very
+first post. Check <a href="https://hexo.io/docs/">documentation</a> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <a
+href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
+you can ask me on <a
+href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ML Procedure</title>
+    <url>/posts/bed2d29b/</url>
+    <content><![CDATA[<p>以<em>根据前一天观看人数，预测第二天观看人数为例</em>（Regression
+Example）</p>
+<ol type="1">
+<li><p>根据 domain knowledge 提出一种合适的<strong>函数/模型
+(Model)</strong></p>
+<p>如 <span class="math inline">\(Model:y=b+wx_i\)</span>，此处</p>
+<ul>
+<li><p><span class="math inline">\(x_i\)</span> 是 feature
+即前一天的观看人数，为输入量</p></li>
+<li><p>weight <span class="math inline">\(w\)</span> 和 bias <span
+class="math inline">\(b\)</span>
+都是未知参数，需要<em>从数据中学习而来</em></p></li>
+</ul></li>
+<li><p>定义合适的<strong>损失函数 (Loss function)</strong></p>
+<p>如 <span
+class="math inline">\(Loss=L(b,w)\)</span>，是以模型未知参数为输入的函数，用来评估这组参数的效果好坏。即，当取<span
+class="math inline">\(L(0.5k,1)\)</span>时，此时 <span
+class="math inline">\(Model:
+y=0.5k+1x_i\)</span>，其对应的损失函数为</p>
+<p>​ Loss：<span
+class="math inline">\(L=\frac{1}{n}\displaystyle\sum_{i=1}^{n}e_i\)</span></p>
+<p>其中<span
+class="math inline">\(e_i\)</span>为自定义的误差，用来衡量真实与估计值的差距，可以有不同计算方法，如</p>
+<ul>
+<li>Mean Absolute Error (MAE): <span
+class="math inline">\(e_i=|y-\hat{y}|\)</span></li>
+<li>Mean Square Error (MSE): <span
+class="math inline">\(e_i=(y-\hat{y})^2\)</span></li>
+</ul>
+<p>其中 <span class="math inline">\(y=0.5k+1x_i\)</span>，而 <span
+class="math inline">\(\hat{y}\)</span> 为与给定输入 <span
+class="math inline">\(x_i\)</span> 对应的<em>真实值</em></p></li>
+<li><p>优化（Optimization）</p>
+<p>使用<strong>梯度下降（Gradient
+Descent）</strong>方法根据<strong>损失函数</strong>优化模型参数</p>
+<p>对于只有一个未知参数的损失函数，如 <span
+class="math inline">\(y=wx_i\)</span>，我们的目的是求 <span
+class="math inline">\(w^*=arg\,\text{min}_w\,L\)</span>，即求能使L最小的
+<span class="math inline">\(w\)</span>，称为 <span
+class="math inline">\(w^*\)</span></p>
+<ul>
+<li><p>随机选择初始值 <span class="math inline">\(w^0\)</span></p></li>
+<li><p>计算在初始值处的微分 <span class="math inline">\(\frac{\partial
+L}{\partial w}|_{w=w^0}\)</span></p></li>
+<li><p>更新 <span class="math inline">\(w\)</span> 的值 <span
+class="math inline">\(w^1=w^0-\eta\frac{\partial L}{\partial
+w}|_{w=w^0}\)</span></p></li>
+</ul></li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+</search>
