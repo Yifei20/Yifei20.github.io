@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.css" integrity="sha256-RvRHGSuWAxZpXKV9lLDt2e+rZ+btzn48Wp4ueS3NZKs=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yifei20.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"manual"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="这里我分享一下ICS大三的学习经验，希望能给学弟学妹一些帮助。 关于自学 对CS学生来说，自学是非常重要的，毕竟学校没办法把所有东西都讲给你，每个人想学的也各有不同。再者，我们学校CS教学深度越来越浅，比如到大三了还没有一门课教过Git、Markdown还有Vim等基本的工具，不额外自学恐怕未来很难能胜任比较好的职位。 所以我想给学弟学妹们推荐几个基本的自学资源：  CS自学指南：堪称CS自学资源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="给学弟学妹们的经验分享">
+<meta property="og:url" content="http://yifei20.github.io/posts/99dac9e8/index.html">
+<meta property="og:site_name" content="Yeefay&#39;s blog">
+<meta property="og:description" content="这里我分享一下ICS大三的学习经验，希望能给学弟学妹一些帮助。 关于自学 对CS学生来说，自学是非常重要的，毕竟学校没办法把所有东西都讲给你，每个人想学的也各有不同。再者，我们学校CS教学深度越来越浅，比如到大三了还没有一门课教过Git、Markdown还有Vim等基本的工具，不额外自学恐怕未来很难能胜任比较好的职位。 所以我想给学弟学妹们推荐几个基本的自学资源：  CS自学指南：堪称CS自学资源">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-19T20:30:46.000Z">
+<meta property="article:modified_time" content="2023-11-07T16:06:42.039Z">
+<meta property="article:author" content="Yeefay">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yifei20.github.io/posts/99dac9e8/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://yifei20.github.io/posts/99dac9e8/","path":"posts/99dac9e8/","title":"给学弟学妹们的经验分享"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>给学弟学妹们的经验分享 | Yeefay's blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Yeefay's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-comment fa-fw"></i>留言</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E8%87%AA%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">关于自学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%A4%A7%E4%BD%9C%E4%B8%9A"><span class="nav-number">2.</span> <span class="nav-text">关于大作业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E5%85%B7%E4%BD%93%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">关于具体课程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#can201-introduction-to-networking"><span class="nav-number">3.1.</span> <span class="nav-text">1. CAN201 (Introduction to
+Networking)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%E8%80%83%E8%AF%95%E5%87%86%E5%A4%87"><span class="nav-number">3.1.1.</span> <span class="nav-text">1.1 参考资料&amp;考试准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%A7%E4%BD%9C%E4%B8%9A"><span class="nav-number">3.1.2.</span> <span class="nav-text">1.2 大作业</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#int201-decision-computation-and-language"><span class="nav-number">3.2.</span> <span class="nav-text">2. INT201 (Decision
+Computation and Language)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cpt204-advanced-oo-programming"><span class="nav-number">3.3.</span> <span class="nav-text">3. CPT204 (Advanced OO
+Programming)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">3.3.1.</span> <span class="nav-text">3.1参考资料</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%A7%E4%BD%9C%E4%B8%9A-1"><span class="nav-number">3.3.2.</span> <span class="nav-text">3.2 大作业</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yeefay"
+      src="/images/avatar.JPG">
+  <p class="site-author-name" itemprop="name">Yeefay</p>
+  <div class="site-description" itemprop="description">This is Yeefay's blog site.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Yifei20" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Yifei20" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yifei.du20@outlook.com" title="E-Mail → mailto:yifei.du20@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yifei20.github.io/posts/99dac9e8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.JPG">
+      <meta itemprop="name" content="Yeefay">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yeefay's blog">
+      <meta itemprop="description" content="This is Yeefay's blog site.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="给学弟学妹们的经验分享 | Yeefay's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          给学弟学妹们的经验分享
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-09-20 04:30:46" itemprop="dateCreated datePublished" datetime="2023-09-20T04:30:46+08:00">2023-09-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-11-08 00:06:42" itemprop="dateModified" datetime="2023-11-08T00:06:42+08:00">2023-11-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">经验分享</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>这里我分享一下ICS大三的学习经验，希望能给学弟学妹一些帮助。</p>
+<h2 id="关于自学">关于自学</h2>
+<p>对CS学生来说，自学是非常重要的，毕竟学校没办法把所有东西都讲给你，每个人想学的也各有不同。再者，我们学校CS教学深度越来越浅，比如到大三了还没有一门课教过Git、Markdown还有Vim等基本的工具，不额外自学恐怕未来很难能胜任比较好的职位。</p>
+<p>所以我想给学弟学妹们推荐几个基本的自学资源：</p>
+<ol type="1">
+<li><a
+target="_blank" rel="noopener" href="https://csdiy.wiki/">CS自学指南</a>：堪称CS自学资源大全，有各类CS课程的资源和经验分享，可以找自己感兴趣的学。</li>
+<li><a target="_blank" rel="noopener" href="https://missing.csail.mit.edu/2020/">MIT Missing Semester
+2020</a>：CS入门课，会教很多重要的基本工具，如Git、Vim等，以后会经常用到。这门课也有中文网站，可以自己找找。</li>
+<li><a target="_blank" rel="noopener" href="https://sp21.datastructur.es/">UC Berkeley
+CS61b</a>：伯克利的经典数据结构课程，基于Java讲解数据结构，同时也会教完成作业需要的Git等工具的使用。一门课顶我们四门课的量，质量没啥可说的，就是学起来要花不少时间。</li>
+</ol>
+<h2 id="关于大作业">关于大作业</h2>
+<p>大三的课程可能会涉及到不少团队合作的大作业，就我们而言有小组大作业的有CAN201、CPT202、CPT208和CPT204，需要大家提前组队。其中有Report的有CAN201、CPT202以及CPT208，而CPT204的为视频Pre。有Report的三个大作业的Report评分占比基本上都超过50%。所以我个人认为Report往往比Coding更加重要，这可能是大家会忽略的地方。而Report会经常用到大一大二EAP所学的知识，当然也要根据要求变化，但学术写作的写作技巧基本上都是一致的，无非就是内容更偏向技术方面。学弟学妹们可以参考具体课程要求来看。</p>
+<h2 id="关于具体课程">关于具体课程</h2>
+<p>我主要分享三门我分数比较高的课的经验，其他课程我都七十多分左右就不再具体讲了：</p>
+<ol type="1">
+<li>CAN201 (Introduction to Networking)： 88%</li>
+<li>INT201(Decision Computation and Language)： 82%</li>
+<li>CPT204 (Advanced OO Programming)： 100 %</li>
+</ol>
+<h3 id="can201-introduction-to-networking">1. CAN201 (Introduction to
+Networking)</h3>
+<h4 id="参考资料考试准备">1.1 参考资料&amp;考试准备</h4>
+<p>资料：如果大家跟我一样听学校的课比较懵，可以参考中科大郑铨老师的计算机网络课，b站就能看：<a
+target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow">中科大郑铨-计算机网络</a>。要注意的是，中科大的课在有些地方会将得更详细一点，可以对照学校课件来看，不过基本上都能对应得比较好。</p>
+<p>考试：这门课期末考试难度不大，题型比较固定。建议把前两年的题都做会订正好，这样考八十多分还是比较容易的。</p>
+<h4 id="大作业">1.2 大作业</h4>
+<p>这门课的大作业似乎每年都不太一样，但基本上就是对网络协议和路由交换等内容的实操，代码部分可能需要一定编程理解能力。可能会给你一堆很长的代码，要你Debug并且完成空着的部分，一上来分析起长代码来可能很头疼，但是按照函数执行顺序一条条理顺下来之后其实就很简单了。不过这个作业大头其实在Report上，要写很多字，还要作图、写伪代码、实验分析什么的，还是挺花时间的，所以最好别拖太晚。</p>
+<p>我把这门课的课程资料上传到了
+Github。如果你想参考，可以通过这个链接访问：<a
+target="_blank" rel="noopener" href="https://github.com/Yifei20/CAN201-Introduction-to-Networking-22S1">CAN201-Introduction-to-Networking-22S1</a></p>
+<h3 id="int201-decision-computation-and-language">2. INT201 (Decision
+Computation and Language)</h3>
+<p>这门课教的内容基本上都比较简单，建议可以课前自己先学一遍，课上老师会一步步写过程，跟起来会容易很多。</p>
+<p>前面部分内容可以参考哈工大的：<a
+target="_blank" rel="noopener" href="https://www.icourse163.org/course/HIT-1206319802">形式语言与自动机理论</a>，但是后面可能就不太一致了。</p>
+<p>和计算机网络一样，这门课考试形式我记得也比较固定，平常的练习题都做好，往年试题也做一下的话拿比较好的分数问题不大。</p>
+<h3 id="cpt204-advanced-oo-programming">3. CPT204 (Advanced OO
+Programming)</h3>
+<p>这门课我拿了满分，简单来讲就是Java的进阶课程，用Java语言讲面对对象编程的各种概念。课程难度比较小，历年均分都很高，但也是很实用的一门课，无论是工程实践还是参加算法竞赛，都能给你很大帮助。我是上完课几乎裸考的蓝桥杯B组国三，如果你想参加蓝桥杯Java组，那推荐你可以先学下面的6.031同时刷Leetcode来准备基础知识。</p>
+<p>这门课我完全自己看课件和下面的资料上的，结合这两个学基本上不会遗漏任何知识点了，所以我也就没去上过课。</p>
+<h4 id="参考资料">3.1参考资料</h4>
+<p>这门课知识内容基本上就是 MIT 6.031: Software Construction
+的简化版，并且MIT网站上有很详细的文字版和例题，所以可以很大程度上作为知识参考</p>
+<p>我是看的20秋的：<a target="_blank" rel="noopener" href="http://web.mit.edu/6.031/www/fa20/">6.031:
+Software Construction, Fall 2020</a></p>
+<h4 id="大作业-1">3.2 大作业</h4>
+<p>我们去年的大作业就是实现一个游戏的AI玩家和GUI，还有视频的Pre展示。这个基本上就是UC
+Berkeley
+CS61b的某个大作业的修改版，框架源码基本上没改，所以网络上有很多可以参考的资料。不过具体的算法实现需要查文献资料，但不需要你卷算法部分，评分更在于结合文献讲清楚使用算法的原因，以及其他课上内容的实践。此外还有一个额外加分的GUI，不过加得不多做起来也挺废时间的，看个人取舍吧。</p>
+<p>此外，课程还包含比较多的代码实践，基本上更在于对实现的数据结构的理解，基本不太涉及复杂的算法，难度都比较低。如果觉得比较困难可能平时就需要多刷刷题，看看是Java语言不会用还是数据结构没理解，尽量自己做别跟别人要答案，因为考试还有限时写代码的部分。</p>
+<p>这门课的课程资料也已经上传到了
+Github。如果你想参考，可以通过这个链接访问：<a
+target="_blank" rel="noopener" href="https://github.com/Yifei20/CPT204-Advanced-Object-Oriented-Programming-22S2">CPT204-Advanced-Object-Oriented-Programming-22S2</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Yeefay
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://yifei20.github.io/posts/99dac9e8/" title="给学弟学妹们的经验分享">http://yifei20.github.io/posts/99dac9e8/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/27054ba3/" rel="prev" title="开发进度">
+                  <i class="fa fa-angle-left"></i> 开发进度
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2022 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Yeefay</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">3k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">11 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.20/fancybox/fancybox.umd.js" integrity="sha256-q8XkJ6dj5VwSvzI8+nATCHHQG+Xv/dAZBCgqmu93zOY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"http://yifei20.github.io/posts/99dac9e8/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":"enable","github_id":"Yifei20","repo":"Yifei20.github.io","client_id":"bf25ada784dcf3192fbe","client_secret":"5d8c0e068c3d0d204ead335d3542dd903ce767f5","admin_user":"Yifei20","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"74993fbbbb3bf24a3203ad6b2b5a1e31"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
