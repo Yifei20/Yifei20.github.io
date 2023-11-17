@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>开发进度</title>
+    <url>/posts/27054ba3/</url>
+    <content><![CDATA[<ol type="1">
+<li>添加评论系统（Gitalk）</li>
+<li>配置图床（Github + PicGo + CDNJS）</li>
+<li>添加留言区，设置页面评论功能</li>
+<li>添加了图片缩放等功能</li>
+<li>添加了图片懒加载功能</li>
+<li>设置书签为手动模式</li>
+<li>移除菜单中分类和标签，将其放在侧边栏下方</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>开发记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Artificial Neuron Network (1)</title>
     <url>/posts/bed2d29b/</url>
     <content><![CDATA[<h2 id="introduction-to-ann">1. Introduction to ANN</h2>
@@ -124,23 +141,6 @@ alt="unit step function" /></p>
         <tag>ANN</tag>
         <tag>DL</tag>
         <tag>ML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>开发进度</title>
-    <url>/posts/27054ba3/</url>
-    <content><![CDATA[<ol type="1">
-<li>添加评论系统（Gitalk）</li>
-<li>配置图床（Github + PicGo + CDNJS）</li>
-<li>添加留言区，设置页面评论功能</li>
-<li>添加了图片缩放等功能</li>
-<li>添加了图片懒加载功能</li>
-<li>设置书签为手动模式</li>
-<li>移除菜单中分类和标签，将其放在侧边栏下方</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>开发记录</tag>
       </tags>
   </entry>
   <entry>
