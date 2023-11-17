@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>开发进度</title>
+    <url>/posts/27054ba3/</url>
+    <content><![CDATA[<ol type="1">
+<li>添加评论系统（Gitalk）</li>
+<li>配置图床（Github + PicGo + CDNJS）</li>
+<li>添加留言区，设置页面评论功能</li>
+<li>添加了图片缩放等功能</li>
+<li>添加了图片懒加载功能</li>
+<li>设置书签为手动模式</li>
+<li>移除菜单中分类和标签，将其放在侧边栏下方</li>
+<li>添加 CNAME 文件</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>开发记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>给学弟学妹们的经验分享</title>
     <url>/posts/99dac9e8/</url>
     <content><![CDATA[<p>这里我分享一下ICS大三的学习经验，希望能给学弟学妹一些帮助。</p>
@@ -62,24 +80,6 @@ href="https://github.com/Yifei20/CPT204-Advanced-Object-Oriented-Programming-22S
       <categories>
         <category>经验分享</category>
       </categories>
-  </entry>
-  <entry>
-    <title>开发进度</title>
-    <url>/posts/27054ba3/</url>
-    <content><![CDATA[<ol type="1">
-<li>添加评论系统（Gitalk）</li>
-<li>配置图床（Github + PicGo + CDNJS）</li>
-<li>添加留言区，设置页面评论功能</li>
-<li>添加了图片缩放等功能</li>
-<li>添加了图片懒加载功能</li>
-<li>设置书签为手动模式</li>
-<li>移除菜单中分类和标签，将其放在侧边栏下方</li>
-<li>添加 CNAME 文件</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>开发记录</tag>
-      </tags>
   </entry>
   <entry>
     <title>Artificial Neuron Network (1)</title>
