@@ -3,7 +3,8 @@
   <entry>
     <title>开发进度</title>
     <url>/posts/27054ba3/</url>
-    <content><![CDATA[<ol type="1">
+    <content><![CDATA[<h2 id="更新内容">更新内容</h2>
+<ol type="1">
 <li>添加评论系统（Gitalk）</li>
 <li>配置图床（Github + PicGo + CDNJS）</li>
 <li>添加留言区，设置页面评论功能</li>
@@ -11,8 +12,12 @@
 <li>添加了图片懒加载功能</li>
 <li>设置书签为手动模式</li>
 <li>移除菜单中分类和标签，将其放在侧边栏下方</li>
-<li>添加 CNAME 文件</li>
+<li>添加 CNAME 文件，解决部署后自定义域名失效问题 [1] (2023.11.17)</li>
 </ol>
+<h2 id="参考">参考</h2>
+<p>[1] CSDN 文章：<a
+href="https://blog.csdn.net/weixin_41747528/article/details/102772937">解决
+Hexo 部署 Github Pages 自定义域名失效的问题(即使已添加 CNAME）</a></p>
 ]]></content>
       <tags>
         <tag>开发记录</tag>
@@ -50,9 +55,8 @@ href="https://www.bilibili.com/video/BV1JV411t7ow">中科大郑铨-计算机网�
 <p>考试：这门课期末考试难度不大，题型比较固定。建议把前两年的题都做会订正好，这样考八十多分还是比较容易的。</p>
 <h4 id="大作业">1.2 大作业</h4>
 <p>这门课的大作业似乎每年都不太一样，但基本上就是对网络协议和路由交换等内容的实操，代码部分可能需要一定编程理解能力。可能会给你一堆很长的代码，要你Debug并且完成空着的部分，一上来分析起长代码来可能很头疼，但是按照函数执行顺序一条条理顺下来之后其实就很简单了。不过这个作业大头其实在Report上，要写很多字，还要作图、写伪代码、实验分析什么的，还是挺花时间的，所以最好别拖太晚。</p>
-<p>我把这门课的课程资料上传到了
-Github。如果你想参考，可以通过这个链接访问：<a
-href="https://github.com/Yifei20/CAN201-Introduction-to-Networking-22S1">CAN201-Introduction-to-Networking-22S1</a></p>
+<!-- 我把这门课的课程资料上传到了 Github。如果你想参考，可以通过这个链接访问：[CAN201-Introduction-to-Networking-22S1
+](https://github.com/Yifei20/CAN201-Introduction-to-Networking-22S1) -->
 <h3 id="int201-decision-computation-and-language">2. INT201 (Decision
 Computation and Language)</h3>
 <p>这门课教的内容基本上都比较简单，建议可以课前自己先学一遍，课上老师会一步步写过程，跟起来会容易很多。</p>
@@ -73,9 +77,8 @@ Software Construction, Fall 2020</a></p>
 Berkeley
 CS61b的某个大作业的修改版，框架源码基本上没改，所以网络上有很多可以参考的资料。不过具体的算法实现需要查文献资料，但不需要你卷算法部分，评分更在于结合文献讲清楚使用算法的原因，以及其他课上内容的实践。此外还有一个额外加分的GUI，不过加得不多做起来也挺废时间的，看个人取舍吧。</p>
 <p>此外，课程还包含比较多的代码实践，基本上更在于对实现的数据结构的理解，基本不太涉及复杂的算法，难度都比较低。如果觉得比较困难可能平时就需要多刷刷题，看看是Java语言不会用还是数据结构没理解，尽量自己做别跟别人要答案，因为考试还有限时写代码的部分。</p>
-<p>这门课的课程资料也已经上传到了
-Github。如果你想参考，可以通过这个链接访问：<a
-href="https://github.com/Yifei20/CPT204-Advanced-Object-Oriented-Programming-22S2">CPT204-Advanced-Object-Oriented-Programming-22S2</a></p>
+<!-- 这门课的课程资料也已经上传到了 Github。如果你想参考，可以通过这个链接访问：[CPT204-Advanced-Object-Oriented-Programming-22S2](https://github.com/Yifei20/CPT204-Advanced-Object-Oriented-Programming-22S2) -->
+<p><em>未来有时间可能会总结一下在西浦的整段学习经历，然后会根据那些重新写一遍这篇文章。</em></p>
 ]]></content>
       <categories>
         <category>经验分享</category>
