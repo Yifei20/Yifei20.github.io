@@ -24,67 +24,6 @@ Hexo 部署 Github Pages 自定义域名失效的问题(即使已添加 CNAME）
       </tags>
   </entry>
   <entry>
-    <title>给学弟学妹们的经验分享</title>
-    <url>/posts/99dac9e8/</url>
-    <content><![CDATA[<p>这里我分享一下ICS大三的学习经验，希望能给学弟学妹一些帮助。</p>
-<h2 id="关于自学">关于自学</h2>
-<p>对CS学生来说，自学是非常重要的，毕竟学校没办法把所有东西都讲给你，每个人想学的也各有不同。再者，我们学校CS教学深度越来越浅，比如到大三了还没有一门课教过Git、Markdown还有Vim等基本的工具，不额外自学恐怕未来很难能胜任比较好的职位。</p>
-<p>所以我想给学弟学妹们推荐几个基本的自学资源：</p>
-<ol type="1">
-<li><a
-href="https://csdiy.wiki/">CS自学指南</a>：堪称CS自学资源大全，有各类CS课程的资源和经验分享，可以找自己感兴趣的学。</li>
-<li><a href="https://missing.csail.mit.edu/2020/">MIT Missing Semester
-2020</a>：CS入门课，会教很多重要的基本工具，如Git、Vim等，以后会经常用到。这门课也有中文网站，可以自己找找。</li>
-<li><a href="https://sp21.datastructur.es/">UC Berkeley
-CS61b</a>：伯克利的经典数据结构课程，基于Java讲解数据结构，同时也会教完成作业需要的Git等工具的使用。一门课顶我们四门课的量，质量没啥可说的，就是学起来要花不少时间。</li>
-</ol>
-<h2 id="关于大作业">关于大作业</h2>
-<p>大三的课程可能会涉及到不少团队合作的大作业，就我们而言有小组大作业的有CAN201、CPT202、CPT208和CPT204，需要大家提前组队。其中有Report的有CAN201、CPT202以及CPT208，而CPT204的为视频Pre。有Report的三个大作业的Report评分占比基本上都超过50%。所以我个人认为Report往往比Coding更加重要，这可能是大家会忽略的地方。而Report会经常用到大一大二EAP所学的知识，当然也要根据要求变化，但学术写作的写作技巧基本上都是一致的，无非就是内容更偏向技术方面。学弟学妹们可以参考具体课程要求来看。</p>
-<h2 id="关于具体课程">关于具体课程</h2>
-<p>我主要分享三门我分数比较高的课的经验，其他课程我都七十多分左右就不再具体讲了：</p>
-<ol type="1">
-<li>CAN201 (Introduction to Networking)： 88%</li>
-<li>INT201(Decision Computation and Language)： 82%</li>
-<li>CPT204 (Advanced OO Programming)： 100 %</li>
-</ol>
-<h3 id="can201-introduction-to-networking">1. CAN201 (Introduction to
-Networking)</h3>
-<h4 id="参考资料考试准备">1.1 参考资料&amp;考试准备</h4>
-<p>资料：如果大家跟我一样听学校的课比较懵，可以参考中科大郑铨老师的计算机网络课，b站就能看：<a
-href="https://www.bilibili.com/video/BV1JV411t7ow">中科大郑铨-计算机网络</a>。要注意的是，中科大的课在有些地方会将得更详细一点，可以对照学校课件来看，不过基本上都能对应得比较好。</p>
-<p>考试：这门课期末考试难度不大，题型比较固定。建议把前两年的题都做会订正好，这样考八十多分还是比较容易的。</p>
-<h4 id="大作业">1.2 大作业</h4>
-<p>这门课的大作业似乎每年都不太一样，但基本上就是对网络协议和路由交换等内容的实操，代码部分可能需要一定编程理解能力。可能会给你一堆很长的代码，要你Debug并且完成空着的部分，一上来分析起长代码来可能很头疼，但是按照函数执行顺序一条条理顺下来之后其实就很简单了。不过这个作业大头其实在Report上，要写很多字，还要作图、写伪代码、实验分析什么的，还是挺花时间的，所以最好别拖太晚。</p>
-<!-- 我把这门课的课程资料上传到了 Github。如果你想参考，可以通过这个链接访问：[CAN201-Introduction-to-Networking-22S1
-](https://github.com/Yifei20/CAN201-Introduction-to-Networking-22S1) -->
-<h3 id="int201-decision-computation-and-language">2. INT201 (Decision
-Computation and Language)</h3>
-<p>这门课教的内容基本上都比较简单，建议可以课前自己先学一遍，课上老师会一步步写过程，跟起来会容易很多。</p>
-<p>前面部分内容可以参考哈工大的：<a
-href="https://www.icourse163.org/course/HIT-1206319802">形式语言与自动机理论</a>，但是后面可能就不太一致了。</p>
-<p>和计算机网络一样，这门课考试形式我记得也比较固定，平常的练习题都做好，往年试题也做一下的话拿比较好的分数问题不大。</p>
-<h3 id="cpt204-advanced-oo-programming">3. CPT204 (Advanced OO
-Programming)</h3>
-<p>这门课我拿了满分，简单来讲就是Java的进阶课程，用Java语言讲面对对象编程的各种概念。课程难度比较小，历年均分都很高，但也是很实用的一门课，无论是工程实践还是参加算法竞赛，都能给你很大帮助。我是上完课几乎裸考的蓝桥杯B组国三，如果你想参加蓝桥杯Java组，那推荐你可以先学下面的6.031同时刷Leetcode来准备基础知识。</p>
-<p>这门课我完全自己看课件和下面的资料上的，结合这两个学基本上不会遗漏任何知识点了，所以我也就没去上过课。</p>
-<h4 id="参考资料">3.1参考资料</h4>
-<p>这门课知识内容基本上就是 MIT 6.031: Software Construction
-的简化版，并且MIT网站上有很详细的文字版和例题，所以可以很大程度上作为知识参考</p>
-<p>我是看的20秋的：<a href="http://web.mit.edu/6.031/www/fa20/">6.031:
-Software Construction, Fall 2020</a></p>
-<h4 id="大作业-1">3.2 大作业</h4>
-<p>我们去年的大作业就是实现一个游戏的AI玩家和GUI，还有视频的Pre展示。这个基本上就是UC
-Berkeley
-CS61b的某个大作业的修改版，框架源码基本上没改，所以网络上有很多可以参考的资料。不过具体的算法实现需要查文献资料，但不需要你卷算法部分，评分更在于结合文献讲清楚使用算法的原因，以及其他课上内容的实践。此外还有一个额外加分的GUI，不过加得不多做起来也挺废时间的，看个人取舍吧。</p>
-<p>此外，课程还包含比较多的代码实践，基本上更在于对实现的数据结构的理解，基本不太涉及复杂的算法，难度都比较低。如果觉得比较困难可能平时就需要多刷刷题，看看是Java语言不会用还是数据结构没理解，尽量自己做别跟别人要答案，因为考试还有限时写代码的部分。</p>
-<!-- 这门课的课程资料也已经上传到了 Github。如果你想参考，可以通过这个链接访问：[CPT204-Advanced-Object-Oriented-Programming-22S2](https://github.com/Yifei20/CPT204-Advanced-Object-Oriented-Programming-22S2) -->
-<p><em>未来有时间可能会总结一下在西浦的整段学习经历，然后会根据那些重新写一遍这篇文章。</em></p>
-]]></content>
-      <categories>
-        <category>经验分享</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Artificial Neuron Network (1)</title>
     <url>/posts/bed2d29b/</url>
     <content><![CDATA[<h2 id="introduction-to-ann">1. Introduction to ANN</h2>
@@ -209,5 +148,66 @@ alt="unit step function" /></p>
         <tag>DL</tag>
         <tag>ML</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>给学弟学妹们的经验分享</title>
+    <url>/posts/99dac9e8/</url>
+    <content><![CDATA[<p>这里我分享一下ICS大三的学习经验，希望能给学弟学妹一些帮助。</p>
+<h2 id="关于自学">关于自学</h2>
+<p>对CS学生来说，自学是非常重要的，毕竟学校没办法把所有东西都讲给你，每个人想学的也各有不同。再者，我们学校CS教学深度越来越浅，比如到大三了还没有一门课教过Git、Markdown还有Vim等基本的工具，不额外自学恐怕未来很难能胜任比较好的职位。</p>
+<p>所以我想给学弟学妹们推荐几个基本的自学资源：</p>
+<ol type="1">
+<li><a
+href="https://csdiy.wiki/">CS自学指南</a>：堪称CS自学资源大全，有各类CS课程的资源和经验分享，可以找自己感兴趣的学。</li>
+<li><a href="https://missing.csail.mit.edu/2020/">MIT Missing Semester
+2020</a>：CS入门课，会教很多重要的基本工具，如Git、Vim等，以后会经常用到。这门课也有中文网站，可以自己找找。</li>
+<li><a href="https://sp21.datastructur.es/">UC Berkeley
+CS61b</a>：伯克利的经典数据结构课程，基于Java讲解数据结构，同时也会教完成作业需要的Git等工具的使用。一门课顶我们四门课的量，质量没啥可说的，就是学起来要花不少时间。</li>
+</ol>
+<h2 id="关于大作业">关于大作业</h2>
+<p>大三的课程可能会涉及到不少团队合作的大作业，就我们而言有小组大作业的有CAN201、CPT202、CPT208和CPT204，需要大家提前组队。其中有Report的有CAN201、CPT202以及CPT208，而CPT204的为视频Pre。有Report的三个大作业的Report评分占比基本上都超过50%。所以我个人认为Report往往比Coding更加重要，这可能是大家会忽略的地方。而Report会经常用到大一大二EAP所学的知识，当然也要根据要求变化，但学术写作的写作技巧基本上都是一致的，无非就是内容更偏向技术方面。学弟学妹们可以参考具体课程要求来看。</p>
+<h2 id="关于具体课程">关于具体课程</h2>
+<p>我主要分享三门我分数比较高的课的经验，其他课程我都七十多分左右就不再具体讲了：</p>
+<ol type="1">
+<li>CAN201 (Introduction to Networking)： 88%</li>
+<li>INT201(Decision Computation and Language)： 82%</li>
+<li>CPT204 (Advanced OO Programming)： 100 %</li>
+</ol>
+<h3 id="can201-introduction-to-networking">1. CAN201 (Introduction to
+Networking)</h3>
+<h4 id="参考资料考试准备">1.1 参考资料&amp;考试准备</h4>
+<p>资料：如果大家跟我一样听学校的课比较懵，可以参考中科大郑铨老师的计算机网络课，b站就能看：<a
+href="https://www.bilibili.com/video/BV1JV411t7ow">中科大郑铨-计算机网络</a>。要注意的是，中科大的课在有些地方会将得更详细一点，可以对照学校课件来看，不过基本上都能对应得比较好。</p>
+<p>考试：这门课期末考试难度不大，题型比较固定。建议把前两年的题都做会订正好，这样考八十多分还是比较容易的。</p>
+<h4 id="大作业">1.2 大作业</h4>
+<p>这门课的大作业似乎每年都不太一样，但基本上就是对网络协议和路由交换等内容的实操，代码部分可能需要一定编程理解能力。可能会给你一堆很长的代码，要你Debug并且完成空着的部分，一上来分析起长代码来可能很头疼，但是按照函数执行顺序一条条理顺下来之后其实就很简单了。不过这个作业大头其实在Report上，要写很多字，还要作图、写伪代码、实验分析什么的，还是挺花时间的，所以最好别拖太晚。</p>
+<!-- 我把这门课的课程资料上传到了 Github。如果你想参考，可以通过这个链接访问：[CAN201-Introduction-to-Networking-22S1
+](https://github.com/Yifei20/CAN201-Introduction-to-Networking-22S1) -->
+<h3 id="int201-decision-computation-and-language">2. INT201 (Decision
+Computation and Language)</h3>
+<p>这门课教的内容基本上都比较简单，建议可以课前自己先学一遍，课上老师会一步步写过程，跟起来会容易很多。</p>
+<p>前面部分内容可以参考哈工大的：<a
+href="https://www.icourse163.org/course/HIT-1206319802">形式语言与自动机理论</a>，但是后面可能就不太一致了。</p>
+<p>和计算机网络一样，这门课考试形式我记得也比较固定，平常的练习题都做好，往年试题也做一下的话拿比较好的分数问题不大。</p>
+<h3 id="cpt204-advanced-oo-programming">3. CPT204 (Advanced OO
+Programming)</h3>
+<p>这门课我拿了满分，简单来讲就是Java的进阶课程，用Java语言讲面对对象编程的各种概念。课程难度比较小，历年均分都很高，但也是很实用的一门课，无论是工程实践还是参加算法竞赛，都能给你很大帮助。我是上完课几乎裸考的蓝桥杯B组国三，如果你想参加蓝桥杯Java组，那推荐你可以先学下面的6.031同时刷Leetcode来准备基础知识。</p>
+<p>这门课我完全自己看课件和下面的资料上的，结合这两个学基本上不会遗漏任何知识点了，所以我也就没去上过课。</p>
+<h4 id="参考资料">3.1参考资料</h4>
+<p>这门课知识内容基本上就是 MIT 6.031: Software Construction
+的简化版，并且MIT网站上有很详细的文字版和例题，所以可以很大程度上作为知识参考</p>
+<p>我是看的20秋的：<a href="http://web.mit.edu/6.031/www/fa20/">6.031:
+Software Construction, Fall 2020</a></p>
+<h4 id="大作业-1">3.2 大作业</h4>
+<p>我们去年的大作业就是实现一个游戏的AI玩家和GUI，还有视频的Pre展示。这个基本上就是UC
+Berkeley
+CS61b的某个大作业的修改版，框架源码基本上没改，所以网络上有很多可以参考的资料。不过具体的算法实现需要查文献资料，但不需要你卷算法部分，评分更在于结合文献讲清楚使用算法的原因，以及其他课上内容的实践。此外还有一个额外加分的GUI，不过加得不多做起来也挺废时间的，看个人取舍吧。</p>
+<p>此外，课程还包含比较多的代码实践，基本上更在于对实现的数据结构的理解，基本不太涉及复杂的算法，难度都比较低。如果觉得比较困难可能平时就需要多刷刷题，看看是Java语言不会用还是数据结构没理解，尽量自己做别跟别人要答案，因为考试还有限时写代码的部分。</p>
+<!-- 这门课的课程资料也已经上传到了 Github。如果你想参考，可以通过这个链接访问：[CPT204-Advanced-Object-Oriented-Programming-22S2](https://github.com/Yifei20/CPT204-Advanced-Object-Oriented-Programming-22S2) -->
+<p><em>未来有时间可能会总结一下在西浦的整段学习经历，然后会根据那些重新写一遍这篇文章。</em></p>
+]]></content>
+      <categories>
+        <category>经验分享</category>
+      </categories>
   </entry>
 </search>
